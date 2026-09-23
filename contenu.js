@@ -17,12 +17,12 @@ const PROFIL = {
 
 // 2) Tes catégories (l'ordre ici = l'ordre sur la page d'accueil)
 const CATEGORIES = [
-  { id: "finance", titre: "Finance / Trading / Investing",
-    description: "Argent, marchés et investissement, expliqués sans jargon." },
+  { id: "finance", titre: "Finance - Trading - Investing",
+    description: "Make Money." },
   { id: "data", titre: "Data",
-    description: "Données, statistiques et machine learning, avec des exemples concrets." },
+    description: "Read Data" },
   { id: "psychologie", titre: "Psychologie / Philosophie",
-    description: "Pourquoi on pense et on agit comme on le fait." }
+    description: "Understand life." }
 ];
 
 // 3) Tes essais. Pour en ajouter un : crée le fichier dans /essais
