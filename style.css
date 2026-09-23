@@ -1,0 +1,73 @@
+:root{
+  --fond:#ECEBFD; --carte:#FFFFFF; --encre:#1B1A26; --doux:#5E5B73;
+  --trait:#D9D6F2; --accent:#4B3FB5;
+  --serif:"Libre Baskerville", Georgia, "Times New Roman", serif;
+  --sans:"Nunito", "Segoe UI", system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--fond);color:var(--encre);font-family:var(--sans);font-size:17px;line-height:1.6}
+a{color:inherit}
+img{max-width:100%;display:block}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* Mise en page à deux colonnes */
+.page{display:grid;grid-template-columns:minmax(300px,2fr) 3fr;gap:4rem;max-width:1200px;margin:0 auto;padding:2.5rem 2rem}
+.gauche{position:sticky;top:0;height:calc(100vh - 5rem);display:flex;align-items:center;justify-content:center}
+.droite{max-width:680px;width:100%;padding-top:3rem}
+
+/* Profil */
+.profil{text-align:center;max-width:340px}
+.profil img{width:180px;height:180px;border-radius:50%;object-fit:cover;margin:0 auto 1.25rem}
+.profil h1{font-family:var(--serif);font-size:1.9rem;margin:0 0 .5rem}
+.profil p{margin:0 0 1.5rem;color:var(--doux);font-style:italic}
+.liens{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap}
+.liens a{width:42px;height:42px;display:grid;place-items:center;border:1px solid #CFCBEA;border-radius:10px;background:var(--carte);transition:transform .15s}
+.liens a:hover{transform:translateY(-2px)}
+.liens svg{width:22px;height:22px}
+
+/* Accueil : liste des catégories */
+.droite{align-self:center}
+.titre-essays{font-family:var(--serif);font-size:2.4rem;margin:0 0 1.5rem}
+.categories{list-style:none;padding:0;margin:0}
+.categories li{border-top:1px solid var(--trait)}
+.categories li:last-child{border-bottom:1px solid var(--trait)}
+.categories a{display:block;padding:1.1rem 0;font-family:var(--serif);font-size:1.3rem;text-decoration:none}
+.categories a:hover{color:var(--accent)}
+
+/* Page d'une catégorie */
+.retour{display:inline-block;color:var(--doux);text-decoration:none;margin-bottom:1.5rem}
+.retour:hover{color:var(--accent)}
+.titre-cat{font-family:var(--serif);font-size:2.2rem;margin:0 0 .5rem;line-height:1.25}
+hr{border:0;border-top:1px solid var(--trait);margin:1.5rem 0}
+.liste{list-style:none;padding:0;margin:0}
+.liste li{border-bottom:1px solid var(--trait)}
+.liste a{display:block;padding:1.1rem 0;text-decoration:none}
+.liste time{font-size:.9rem;color:var(--doux)}
+.liste h3{font-family:var(--serif);font-size:1.2rem;margin:.15rem 0 .25rem}
+.liste a:hover h3{color:var(--accent)}
+.liste p{margin:0;color:var(--doux)}
+.vide{color:var(--doux)}
+
+/* Page d'un essai */
+.essai{max-width:660px;margin:0 auto;padding:2.5rem 1.5rem 5rem}
+.essai .haut{display:flex;align-items:center;gap:.75rem;text-decoration:none;color:var(--doux);margin-bottom:2.5rem}
+.essai .haut img{width:40px;height:40px;border-radius:50%}
+.essai h1{font-family:var(--serif);font-size:2.2rem;line-height:1.25;margin:0 0 .5rem}
+.essai time{color:var(--doux)}
+.essai article{font-family:var(--serif);font-size:1.05rem;line-height:1.85}
+.essai figure{margin:2rem 0}
+.essai figure img{border-radius:12px}
+.essai figcaption{font-family:var(--sans);font-size:.9rem;color:var(--doux);margin-top:.5rem;text-align:center}
+
+/* Téléphone */
+@media (max-width:820px){
+  .page{grid-template-columns:1fr;gap:2rem;padding:2rem 1.25rem}
+  .gauche{position:static;height:auto}
+  .profil img{width:130px;height:130px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.essai .meta{color:var(--doux);margin:0 0 2rem}
+.essai .meta a{color:var(--accent)}
+.essai article img{border-radius:12px;margin:2rem 0}
+.essai article h2{font-size:1.4rem;margin-top:2.5rem}

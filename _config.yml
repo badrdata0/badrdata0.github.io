@@ -1,0 +1,24 @@
+# ============ TON PROFIL (page principale) ============
+nom: "Badr M."
+bio: "There is no spoon."
+photo: "/images/howto.jpg"
+
+liens:   # types possibles : instagram, youtube, linkedin, email, x, tiktok
+  - type: instagram
+    url: "https://instagram.com/"
+  - type: youtube
+    url: "https://youtube.com/"
+  - type: linkedin
+    url: "https://linkedin.com/"
+  - type: email
+    url: "mailto:toi@exemple.com"
+
+# ============ NE PAS TOUCHER EN DESSOUS ============
+lang: fr
+markdown: kramdown
+exclude: [LISEZMOI.md]
+defaults:
+  - scope:
+      path: "essays"
+    values:
+      layout: essai

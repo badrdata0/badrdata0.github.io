@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<h2 class="titre-essays">Essays</h2>
+<ul class="categories">
+{% for c in site.data.categories %}
+  <li><a href="{{ '/categories/' | append: c.id | append: '.html' | relative_url }}">{{ c.titre }}</a></li>
+{% endfor %}
+</ul>
