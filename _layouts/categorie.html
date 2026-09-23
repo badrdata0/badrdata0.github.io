@@ -1,0 +1,21 @@
+---
+layout: default
+---
+{%- assign cat = site.data.categories | where: "id", page.cat | first -%}
+{%- assign essais = site.pages | where_exp: "p", "p.path contains 'essays/'" | where: "category", page.cat | sort: "date" | reverse -%}
+<a class="retour" href="{{ '/' | relative_url }}">‹ Essays</a>
+<h1 class="titre-cat">{{ cat.titre }}</h1>
+<p class="vide">{{ cat.description }}</p>
+<hr>
+{% if essais.size > 0 %}
+<ul class="liste">
+{% for e in essais %}
+  <li><a href="{{ e.url | relative_url }}">
+    <time datetime="{{ e.date | date: '%Y-%m-%d' }}">{% include date.html d=e.date %}</time>
+    <h3>{{ e.title }}</h3>
+  </a></li>
+{% endfor %}
+</ul>
+{% else %}
+<p class="vide">Pas encore d'essai ici.</p>
+{% endif %}
