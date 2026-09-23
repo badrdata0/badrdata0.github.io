@@ -4,8 +4,8 @@
 
 // 1) Ton profil
 const PROFIL = {
-  nom: "Ton Nom",
-  bio: "J'écris sur la finance, le machine learning et la psychologie, simplement.",
+  nom: "Badr M.",
+  bio: "There is no spoon.",
   photo: "images/photo.svg",   // remplace par images/photo.jpg
   liens: [
     { type: "instagram", url: "https://instagram.com/" },
