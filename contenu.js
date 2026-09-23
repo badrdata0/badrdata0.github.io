@@ -6,7 +6,7 @@
 const PROFIL = {
   nom: "Badr M.",
   bio: "There is no spoon.",
-  photo: "images/photo.svg",   // remplace par images/photo.jpg
+  photo: "images/howto.jpg",   // remplace par images/photo.jpg
   liens: [
     { type: "instagram", url: "https://instagram.com/" },
     { type: "youtube",   url: "https://youtube.com/" },
