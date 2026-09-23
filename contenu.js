@@ -20,7 +20,7 @@ const CATEGORIES = [
   { id: "finance", titre: "Finance - Trading - Investing",
     description: "Make Money." },
   { id: "data", titre: "Data",
-    description: "Read Data" },
+    description: "Read and Analyze" },
   { id: "psychology", titre: "Philosophy / Psychology",
     description: "Understand life." }
 ];
