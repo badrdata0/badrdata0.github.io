@@ -21,7 +21,7 @@ const CATEGORIES = [
     description: "Make Money." },
   { id: "data", titre: "Data",
     description: "Read Data" },
-  { id: "psychologie", titre: "Psychologie / Philosophie",
+  { id: "psychology", titre: "Philosophy / Psychology",
     description: "Understand life." }
 ];
 
@@ -32,16 +32,4 @@ const ESSAIS = [
     date: "2026-09-20", categorie: "finance",
     resume: "Pourquoi commencer tôt compte plus que mettre beaucoup.",
     fichier: "essais/interets-composes.html" },
-  { titre: "Qu'est-ce qu'un réseau de neurones ?",
-    date: "2026-09-12", categorie: "data",
-    resume: "Une explication avec des boutons de volume.",
-    fichier: "essais/reseau-de-neurones.html" },
-  { titre: "Pourquoi on remet tout à demain",
-    date: "2026-08-30", categorie: "psychologie",
-    resume: "La procrastination n'est pas de la paresse.",
-    fichier: "essais/procrastination.html" },
-  { titre: "Épargner avant de dépenser",
-    date: "2026-08-02", categorie: "finance",
-    resume: "La règle simple qui change tout.",
-    fichier: "essais/epargner.html" }
 ];
