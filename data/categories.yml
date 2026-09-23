@@ -1,0 +1,14 @@
+# Tes catégories, dans l'ordre d'affichage.
+# L'"id" est le mot à écrire dans "category:" en haut de chaque essai.
+- id: finance
+  titre: "Finance & Markets"
+  description: "Finance, trading, investing."
+- id: health
+  titre: "Health & Performance"
+  description: "Body, mind, brain, focus, ADHD."
+- id: philosophy
+  titre: "Philosophy & Psychology"
+  description: "Philosophy, psychology, religion."
+- id: books
+  titre: "Books & Screens"
+  description: "Books, movies, TV shows."
