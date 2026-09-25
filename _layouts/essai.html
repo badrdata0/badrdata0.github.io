@@ -1,8 +1,7 @@
 <!doctype html><html lang="fr"><head>{% include head.html %}</head>
 <body><div class="essai">
-  {%- assign cat = site.data.categories | where: "id", page.category | first -%}
   <a class="haut" href="{{ '/' | relative_url }}"><img src="{{ site.photo | relative_url }}" alt=""><span>{{ site.nom }}</span></a>
   <h1>{{ page.title }}</h1>
-  <p class="meta">{% include date.html d=page.date %}{% if cat %}, dans <a href="{{ '/categories/' | append: cat.id | append: '.html' | relative_url }}">{{ cat.titre }}</a>{% endif %}</p>
+  <p class="meta">{% include date.html d=page.date %}{% for id in page.category %}{% assign cat = site.data.categories | where: "id", id | first %}{% if cat %}{% if forloop.first %}, dans {% else %} · {% endif %}<a href="{{ '/categories/' | append: cat.id | append: '.html' | relative_url }}">{{ cat.titre }}</a>{% endif %}{% endfor %}</p>
   <article>{{ content }}</article>
 </div></body></html>
