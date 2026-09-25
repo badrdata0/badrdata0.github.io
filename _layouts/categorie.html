@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign cat = site.data.categories | where: "id", page.cat | first -%}
-{%- assign essais = site.pages | where_exp: "p", "p.path contains 'essays/'" |where_exp: "p", "p.category contains page.cat| sort: "date" | reverse -%}
+{%- assign essais = site.pages | where_exp: "p", "p.path contains 'essays/'" | where_exp: "p", "p.category contains page.cat" | sort: "date" | reverse -%}
 <a class="retour" href="{{ '/' | relative_url }}">‹ Essays</a>
 <h1 class="titre-cat">{{ cat.titre }}</h1>
 <p class="vide">{{ cat.description }}</p>
