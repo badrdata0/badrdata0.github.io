@@ -3,6 +3,9 @@
 - id: finance
   titre: "Finance & Markets"
   description: "Finance, trading, investing."
+- id: data
+  titre: "Data & AI"
+  description: "Artificial Intelligence."
 - id: health
   titre: "Health & Performance"
   description: "Body, mind, brain, focus, ADHD."
